@@ -26,7 +26,7 @@ Como Rodar o Projeto:
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [URL-DO-SEU-REPOSITÓRIO]
+    git clone https://github.com/bryoliveiira/poketrainn
     ```
 2.  **Entre na Pasta do Projeto:**
     ```bash
