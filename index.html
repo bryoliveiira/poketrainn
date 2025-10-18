@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeTrainn!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <a href="#" class="brand-name">
+            <img src="img/icon.png" alt="Icon" class="brand-icon">
+            <span class="brand-text">PokeTrainn</span>
+        </a>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#" id="menu-github" target="_blank">GitHub</a></li>
+                <li><a href="#" id="menu-linkedin" target="_blank">LinkedIn</a></li>
+                <li><a href="#" id="menu-donate" target="_blank">Doar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>MONTE SEU TIME POKÉMON!</h1>
+
+    <div class="user-options">
+        <div class="selection-box">
+            <p>Selecione seu Gênero:</p>
+            <div class="gender-options">
+                <img src="img/boy.png" alt="Menino" class="gender-img" data-gender="boy">
+                <img src="img/girl.png" alt="Menina" class="gender-img" data-gender="girl">
+            </div>
+        </div>
+
+        <div id="generation-box" class="selection-box hidden">
+            <p>Selecione sua Geração:</p>
+            <div id="generation-options">
+                <button class="generation-btn" data-generation="1">1ª</button>
+                <button class="generation-btn" data-generation="2">2ª</button>
+                <button class="generation-btn" data-generation="3">3ª</button>
+                <button class="generation-btn" data-generation="4">4ª</button>
+                <button class="generation-btn" data-generation="5">5ª</button>
+                <button class="generation-btn" data-generation="6">6ª</button>
+                <button class="generation-btn" data-generation="7">7ª</button>
+                <button class="generation-btn" data-generation="8">8ª</button>
+                <button class="generation-btn" data-generation="9">9ª</button>
+                <button class="generation-btn" data-generation="all">Todas</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="game-box hidden">
+            <h2>Gire para Sortear</h2>
+            <div id="roulette-container">
+                <img id="roulette-image" src="img/pokeball.png" alt="Pokébola">
+            </div>
+            <div class="result-display">
+                <img id="pokemon-sprite" src="" alt="Pokémon sorteado" style="display:none;">
+            </div>
+            <p id="counter">Pokémon no time: 0 de 6</p>
+            <button id="spin-button" class="hidden">Girar!</button>
+        </div>
+        <div class="team-box hidden">
+            <h2>Seu Time</h2>
+            <ul id="pokemon-list"></ul>
+        </div>
+    </div>
+
+    <div id="final-team-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <h2 class="modal-title">Seu Time está Completo!</h2>
+            <ul id="final-pokemon-list"></ul>
+            <button id="reset-button">Montar Novo Time</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Make for B.O.S © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
